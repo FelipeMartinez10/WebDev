@@ -1,0 +1,27 @@
+.tweet {
+    width: 400px;
+    margin: 20px;
+    border: #0d5ddd solid 1px;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .tweet_profile_pic {
+    width: 20%;
+    float: left;
+    display: block;
+
+  }
+  .tweet_text {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+    text-align: justify;
+  }
+  .tweet_name {
+    clear: both;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
