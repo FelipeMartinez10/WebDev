@@ -56,7 +56,15 @@ body {
 {
   opacity: 1;
 }
-
+#nav_volver
+{
+  display: none;
+}
+#mas_academico
+{
+  display: none;
+  opacity: 1;
+}
 .featurette-image.pull-left {
     margin-right: 40px;
 }
