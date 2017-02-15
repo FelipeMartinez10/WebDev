@@ -38,7 +38,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#" id="nav_inicio">Inicio</a>
-                <a class="navbar-brand" href="#"id="nav_volver" onclick="ocultarElementoAcademico()">
+                <a class="navbar-brand" href="#"id="nav_volver" onclick="ocultarElementoAcademico(); ocultarElementoHobbie();">
                   <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Volver</a>
 
             </div>
@@ -62,7 +62,7 @@
     <header class="header-image" id="encabezado">
         <div class="headline">
             <div class="container">
-                <h1>Felipe Martinez Piazuelo</h1>
+                <h1>Felipe Martínez Piazuelo</h1>
                 <img class=" profile-pic img-circle img-responsive"
                 src="https://scontent.xx.fbcdn.net/v/t1.0-9/13707620_10209080516826162_8890919710066748713_n.jpg?oh=dae9274d11f876f052800bb856667453&oe=5941E801"
                 alt="Profile Pic">
@@ -80,7 +80,7 @@
                 <span class="text-muted">en Uniandes</span>
             </h2>
             <p class="lead">Actualmente me encuentro cursando séptimo semestre en la Universidad de los Andes. En un principio ingrese a la carrera de ingeniería electrónica, pero decidí cambiarme a ingeniería de sistemas donde me he sentido apasionado por lo que hago.</p>
-              <h3><a onclick="mostrarElementoAcademico()" href="#">Más...</a></h3>
+              <h2><a onclick="mostrarElementoAcademico()" href="#">Más...</a></h2>
         </div>
         <hr class="featurette-divider" id="services">
         <div class="featurette segunda-seccion" id="sobre_mi" >
@@ -94,18 +94,6 @@
         </div>
       </div>
       <div class="mas-academico" id ='mas_academico' >
-        <!--<div> BORRAR ESTE DIV-->
-      <!--<div class="row">
-        <div class="col-md-12">
-          <ul id="scene">
-            <li class="layer" data-depth="0.20"><img src="layer2.png"></li>
-            <li class="layer" data-depth="0.40"><img src="layer3.png"></li>
-            <li class="layer" data-depth="0.60"><img src="layer4.png"></li>
-            <li class="layer" data-depth="0.80"><img src="layer5.png"></li>
-            <li class="layer" data-depth="1.00"><img src="layer6.png"></li>
-          </ul>
-        </div>
-      </div>-->
       <div class="container contenedor-academico" id="cont-fondo">
         <div class="row">
           <div class="col-md-12">
@@ -182,6 +170,32 @@
       </div>
 
       </div>
+
+
+      <!--EMPIEZA SECCION DE HOBBIES-->
+      <div class="hobbies" id="hobbies-contenedor">
+        <div class="container">
+          <div class="row">
+            <div class="col-md12">
+              <h1 id="titulo-hobbies">Hobbies:</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <h3>Wakeboard</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <img id="wake-pic" class="img-rounded img-responsive"
+                  src="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/10525985_10203585786621341_898269375378020404_n.jpg?oh=16c954cf71bcb1a6eaac249a89f671fa&oe=5903773C" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8"></div>
+          </div>
+        </div>
+      </div>
       <hr class="featurette-divider">
       <!-- Footer -->
       <footer>
@@ -202,7 +216,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-    <script src="js/parallax.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/javascript.js"></script>
 

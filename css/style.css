@@ -55,6 +55,18 @@ body {
    line-height: 1;
    text-align: center;
 }
+.hobbies
+{
+  display: none;
+}
+#titulo-hobbies
+{
+   color: rgb(33, 34, 35);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 5em;
+   line-height: 1;
+   text-align: center;
+}
 #contacto-titulo
 {
   color: rgb(33, 34, 35);
@@ -113,7 +125,17 @@ body {
 footer {
     margin: 50px 0;
 }
-
+#wake-pic
+{
+  width: 100%;
+  
+}
+.hobbies h3
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  color: rgb(33, 34, 35);
+}
 .img-seccion
 {
   height: 25em;

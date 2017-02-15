@@ -56,5 +56,27 @@ contenedor.waypoint(
    document.getElementById('nav_volver').style.display='none';
    document.getElementById('mas_academico').style.display = 'none';
  }
- var scene = document.getElementById('scene');
- var parallax = new Parallax(scene);
+ var mostrarElementoHobbie = function ()
+ {
+   document.getElementById('estudios').style.display='none';
+   document.getElementById('sobre_mi').style.display='none';
+   document.getElementById('about').style.display='none';
+   document.getElementById('services').style.display='none';
+   document.getElementById('encabezado').style.display='none';
+   document.getElementById('nav_lista').style.display='none';
+   document.getElementById('nav_inicio').style.display='none';
+   document.getElementById('hobbies-contenedor').style.display='block';
+   document.getElementById('nav_volver').style.display='block';
+ }
+ var ocultarElementoHobbie = function ()
+ {
+   document.getElementById('about').style.display='block';
+   document.getElementById('estudios').style.display='block';
+   document.getElementById('sobre_mi').style.display='block';
+   document.getElementById('services').style.display='block';
+   document.getElementById('encabezado').style.display='block';
+   document.getElementById('nav_lista').style.display='block';
+   document.getElementById('nav_inicio').style.display='block';
+   document.getElementById('hobbies-contenedor').style.display='none';
+   document.getElementById('nav_volver').style.display='none';
+ }
