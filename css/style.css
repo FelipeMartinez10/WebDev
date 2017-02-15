@@ -49,11 +49,24 @@ body {
 }
 #titulo-academica
 {
-   color: #111;
+   color: rgb(33, 34, 35);
    font-family: 'Montserrat', sans-serif;
    font-size: 5em;
    line-height: 1;
    text-align: center;
+}
+#contacto-titulo
+{
+  color: rgb(33, 34, 35);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  line-height: 1;
+  text-align: left;;
+}
+.boton-social
+{
+  font-size: 10em;
+  border-radius: 5em;
 }
 
 .featurette {
