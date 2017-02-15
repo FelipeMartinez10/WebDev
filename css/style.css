@@ -122,6 +122,17 @@ p
     margin-top: 3em;
     border: 0.1em solid rgba(0, 0, 0, 0.1);
 }
+.box li
+{
+  margin: 0 0 0.3em 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+.box h3
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
 .box-icon
 {
   margin: 0 auto;
