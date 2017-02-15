@@ -83,12 +83,33 @@ footer {
 
 .img-seccion
 {
-  /* cambia estos dos valores para definir el tamaño de tu círculo */
   height: 25em;
   width: 25em;
-  /* los siguientes valores son independientes del tamaño del círculo */
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
   background-size: 100% auto;
+}
+p
+{
+  text-align: justify;
+}
+.box{
+    border-radius: 1em;
+    box-shadow: 1em 1em 2em 0em rgba(0, 0, 0, 0.16), 0em 2em 4em 0em rgba(0, 0, 0, 0.12);
+    padding: 1em 2em;
+    display: block;
+    margin-top: 3em;
+    border: 0.1em solid rgba(0, 0, 0, 0.1);
+}
+.box-icon
+{
+  margin: 0 auto;
+  border: 1em solid green;
+  vertical-align: top;
+  margin-top: -2em;
+  border: 0.1em solid rgba(0, 0, 0, 0.1);
+  display: table;
+
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -18,23 +18,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
     integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js">
+  </script>
+    <script src="js/app.js"></script>
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
-<body>
-
-
-
-
+<body  ng-app='myApp'>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -47,7 +40,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#" id="nav_inicio">Inicio</a>
-                <a class="navbar-brand" id="nav_volver" onclick="ocultarElementoAcademico()">Volver</a>
+                <a class="navbar-brand" href="#"id="nav_volver" onclick="ocultarElementoAcademico()">
+                  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Volver</a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,22 +74,17 @@
 
     <!-- Page Content -->
     <div class="container">
-
+      <div>
         <hr class="featurette-divider" id="about">
-
-        <!-- First Featurette -->
         <div class="featurette primera-seccion" id ="estudios" >
             <img class="img-seccion featurette-image img-circle img-responsive pull-right" src="./img/logoUniandes.png">
             <h2 class="featurette-heading">Estudiante de Ingeniería de Sistemas
                 <span class="text-muted">en Uniandes</span>
             </h2>
             <p class="lead">Actualmente me encuentro cursando séptimo semestre en la Universidad de los Andes. En un principio ingrese a la carrera de ingeniería electrónica, pero decidí cambiarme a ingeniería de sistemas donde me he sentido apasionado por lo que hago.</p>
-              <a onclick="mostrarElementoAcademico()">Más</a>
+              <a onclick="mostrarElementoAcademico()" href="#">Más</a>
         </div>
-
         <hr class="featurette-divider" id="services">
-
-        <!-- Second Featurette -->
         <div class="featurette segunda-seccion" id="sobre_mi" >
             <img class="img-seccion foto-cali featurette-image img-circle img-responsive pull-left" src="./img/cali.jpg">
             <h2 class="featurette-heading">Un poco más
@@ -104,38 +94,68 @@
               En el 2014 viaje a la ciudad de Bogotá donde inicie mis estudios universitarios.
             </p>
         </div>
-
-        <!-- ELEMENTOS OCULTOS -->
-
-
-
-
-
-
-
-        <div class="featurette mas-academico" id ='mas_academico' >
-            <img class="img-seccion foto-cali featurette-image img-circle img-responsive pull-left" src="./img/cali.jpg">
-            <h2 class="featurette-heading">ESTABA ESCONDICO
-                <span class="text-muted">ESCONDIDO</span>
-            </h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+      </div>
+      <div class="mas-academico" id ='mas_academico' >
+        <!--<div> BORRAR ESTE DIV-->
+      <!--<div class="row">
+        <div class="col-md-12">
+          <ul id="scene">
+            <li class="layer" data-depth="0.20"><img src="layer2.png"></li>
+            <li class="layer" data-depth="0.40"><img src="layer3.png"></li>
+            <li class="layer" data-depth="0.60"><img src="layer4.png"></li>
+            <li class="layer" data-depth="0.80"><img src="layer5.png"></li>
+            <li class="layer" data-depth="1.00"><img src="layer6.png"></li>
+          </ul>
         </div>
-
-
-        <hr class="featurette-divider">
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Pagina realizada con plantilla de <a href="https://startbootstrap.com/template-overviews/one-page-wonder/" target="_blank">startbootstrap.com.</a> Respetando la licencia proporcionada por la pagina.</p>
-                </div>
+      </div>-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box">
+            <div class="box-icon">
+              <span class="">kkkkk</span>
             </div>
-        </footer>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="box-icon">
+              <span class="">kkkkk</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="box-icon">
+              <span class="">kkkkk</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <hr class="featurette-divider">
+      <!-- Footer -->
+      <footer>
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>Copyright &copy; Pagina realizada con plantilla de <a href="https://startbootstrap.com/template-overviews/one-page-wonder/" target="_blank">startbootstrap.com.</a> Respetando la licencia proporcionada por la pagina.</p>
+              </div>
+          </div>
+      </footer>
 
     </div>
     <!-- /.container -->
@@ -147,9 +167,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-
+    <script src="js/parallax.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/javascript.js"></script>
+
 
 </body>
 
