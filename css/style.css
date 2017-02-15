@@ -17,7 +17,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    
+
 }
 .profile-pic
 {
@@ -65,10 +65,7 @@ body {
 {
   opacity: 1;
 }
-.mas_academico
-{
-  background: url('./img/libros.jpg');
-}
+
 #nav_volver
 {
   display: none;
@@ -82,12 +79,22 @@ body {
     margin-right: 40px;
 }
 
+
 .featurette-image.pull-right {
     margin-left: 40px;
 }
 
 .featurette-heading {
     font-size: 50px;
+}
+.iconos-acade
+{
+  height: 7em;
+  width: 7em;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
 }
 
 footer {
@@ -118,11 +125,16 @@ p
 .box-icon
 {
   margin: 0 auto;
-  border: 1em solid green;
   vertical-align: top;
-  margin-top: -2em;
-  border: 0.1em solid rgba(0, 0, 0, 0.1);
+  margin-top: -3em;
   display: table;
-
-
+}
+.container:after
+{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
