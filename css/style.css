@@ -7,7 +7,7 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('https://scontent.xx.fbcdn.net/v/t1.0-9/13700049_10209080412063543_8461344192701335878_n.jpg?oh=6eebda424528eeb07b6f8c78ec231315&oe=590DB0B2');
+    background: url('../img/back.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
